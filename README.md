@@ -1,4 +1,4 @@
-# 📦 SAP S/4HANA MM: P2P Procurement Analytics & Multi-Criteria Vendor Risk Scoring
+# SAP S/4HANA MM: P2P Procurement Analytics & Multi-Criteria Vendor Risk Scoring
 
 ![SQL Server](https://img.shields.io/badge/SQL%20Server-CC292B?style=for-the-badge\&logo=microsoftsqlserver\&logoColor=white)
 ![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge\&logo=powerbi\&logoColor=black)
@@ -20,7 +20,7 @@ The primary objective is to demonstrate how ERP data can be transformed into act
 
 ---
 
-## 🎯 Business Context
+## Business Context
 
 In enterprise procurement, evaluating suppliers using only **On-Time Delivery (OTD %)** can hide important operational and financial risks.
 
@@ -35,7 +35,7 @@ Therefore, this project combines **delivery performance, open financial exposure
 
 ---
 
-## 🎯 Project Objectives
+## Project Objectives
 
 The project was designed around five main objectives:
 
@@ -97,7 +97,7 @@ Translate analytical results into procurement-oriented actions such as:
 
 ---
 
-# 🏗️ Solution Architecture
+# Solution Architecture
 
 ```text
 ┌──────────────────────────────────────────────┐
@@ -129,7 +129,7 @@ Translate analytical results into procurement-oriented actions such as:
 
 ---
 
-# 🗄️ Database Architecture
+# Database Architecture
 
 ## Database
 
@@ -180,7 +180,7 @@ This enables the analytical layer to simulate realistic procurement situations.
 
 ---
 
-# 🔗 SAP MM Data Model
+# SAP MM Data Model
 
 The project uses a simplified SAP S/4HANA MM-inspired structure.
 
@@ -222,7 +222,7 @@ The project uses a simplified SAP S/4HANA MM-inspired structure.
 
 ---
 
-# 📊 Analytical SQL Views
+# Analytical SQL Views
 
 The SQL analytical layer converts transactional procurement data into reusable business-level datasets.
 
@@ -308,7 +308,7 @@ Creates a delivery-based vendor segmentation.
 
 ---
 
-# 📈 Power BI — Executive Vendor 360
+# Power BI — Executive Vendor 360
 
 The Power BI layer transforms the SQL analytical views into an executive procurement dashboard.
 
@@ -345,7 +345,7 @@ The dashboard provides visibility into:
 
 ---
 
-# 🔎 2. Operational Vendor 360
+# 2. Operational Vendor 360
 
 The Vendor 360 section provides detailed vendor-level analysis.
 
@@ -379,7 +379,7 @@ Delivery / Goods Receipt
 
 ---
 
-# 🐍 Python Analytics
+# Python Analytics
 
 ## Multi-Criteria Vendor Risk Scoring
 
@@ -400,7 +400,7 @@ The model combines three dimensions:
 
 ---
 
-# 🧮 Risk Score Methodology
+# Risk Score Methodology
 
 The composite risk score is calculated as:
 
@@ -443,7 +443,7 @@ This allows vendors to be compared across different numerical scales.
 
 ---
 
-# ⚠️ Risk Classification
+# Risk Classification
 
 The resulting score is converted to a 0–100 scale for easier interpretation.
 
@@ -451,7 +451,7 @@ The model is designed to identify vendors whose risk emerges from the **combinat
 
 ---
 
-# 📊 Analytical Results
+# Analytical Results
 
 | Vendor                        | Segment |     OTD | Open Amount | Risk Score | Risk Level     |
 | ----------------------------- | ------- | ------: | ----------: | ---------: | -------------- |
@@ -465,7 +465,7 @@ The model is designed to identify vendors whose risk emerges from the **combinat
 
 ---
 
-# 💡 Key Analytical Insights
+# Key Analytical Insights
 
 ## Hidden Exposure Beyond OTD
 
@@ -487,7 +487,7 @@ This demonstrates the value of combining multiple procurement indicators.
 
 ---
 
-# 📌 Procurement Action Framework
+# Procurement Action Framework
 
 Based on the analytical results, the case study proposes several potential procurement actions.
 
@@ -527,7 +527,7 @@ represent examples of vendors that could be considered when evaluating volume di
 
 ---
 
-# 🧠 Why Multi-Criteria Risk Scoring?
+# Why Multi-Criteria Risk Scoring?
 
 Traditional supplier evaluation may focus heavily on one KPI.
 
@@ -567,7 +567,7 @@ This creates a more multidimensional view of procurement exposure.
 
 ---
 
-# 🛠️ Technology Stack
+# Technology Stack
 
 ## Database & SQL
 
@@ -614,7 +614,7 @@ This creates a more multidimensional view of procurement exposure.
 
 ---
 
-# 🚀 Installation & Setup
+# Installation & Setup
 
 ## Requirements
 
@@ -628,7 +628,7 @@ Before running the project, make sure the following are available:
 
 ---
 
-# 🗄️ Database Installation
+# Database Installation
 
 The project provides an automated SQL build script for creating the procurement analytics database.
 
@@ -654,7 +654,7 @@ The database name used in this project is `SAP_Procurement`.
 
 ---
 
-# 🔧 Modular Database Build
+# Modular Database Build
 
 The database can also be created step-by-step.
 
@@ -710,7 +710,7 @@ sqlcmd -S "<SQL_SERVER_INSTANCE>" -d SAP_Procurement -i 08_verify.sql
 
 ---
 
-# 📊 Power BI Setup
+# Power BI Setup
 
 Open:
 
@@ -733,7 +733,7 @@ The dashboard provides both executive-level KPIs and detailed vendor-level drill
 
 ---
 
-# 🐍 Python Setup
+# Python Setup
 
 The Python analysis is located in:
 
@@ -766,7 +766,7 @@ vendor_risk_analysis_output.csv
 
 ---
 
-# 📁 Repository Structure
+# Repository Structure
 
 ```text
 SAP-Procurement-Vendor-Scorecard/
@@ -801,7 +801,7 @@ SAP-Procurement-Vendor-Scorecard/
 
 ---
 
-# 📸 Dashboard & Analysis Preview
+# Dashboard & Analysis Preview
 
 ## Vendor Risk Matrix
 
@@ -809,7 +809,7 @@ SAP-Procurement-Vendor-Scorecard/
 
 ---
 
-# 🔄 End-to-End Workflow
+# End-to-End Workflow
 
 The complete analytical workflow can be summarized as:
 
@@ -839,7 +839,7 @@ SAP MM Inspired Data Model
 
 ---
 
-# 🎓 Business & Technical Skills Demonstrated
+# Business & Technical Skills Demonstrated
 
 This project demonstrates practical experience across multiple areas.
 
@@ -897,7 +897,7 @@ This project demonstrates practical experience across multiple areas.
 
 ---
 
-# ⚠️ Disclaimer
+# Disclaimer
 
 This repository is an **educational and portfolio case study**.
 
@@ -909,7 +909,7 @@ The risk scoring methodology is a custom analytical framework created for this p
 
 ---
 
-# 👩‍💻 Author
+# Author
 
 ## Cansu Kahve
 
@@ -931,7 +931,7 @@ Interested in:
 
 ---
 
-## ⭐ Project Highlights
+## Project Highlights
 
 ```text
 SAP S/4HANA MM Inspired Data Model
